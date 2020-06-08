@@ -11,6 +11,24 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+/*
+char	*ft_strchr(const char *s, int c)
+{
+	char	*s1;
+	int		i;
+
+	i = 0;
+	s1 = (char *)s;
+	while (s1[i])
+	{
+		if (s1[i] == c)
+			return (&s1[i]);
+		i++;
+	}
+	if (s1[i] == c)
+		return (&s1[i]);
+	return (NULL);
+} */
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -19,6 +37,8 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	s1 = (char *)s;
+	if (!s)
+		return (NULL);
 	while (s1[i])
 	{
 		if (s1[i] == c)

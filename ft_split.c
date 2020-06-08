@@ -71,7 +71,7 @@ char			**ft_split(char const *s, char c)
 			j = i;
 			while (s[j] != c && s[j] != '\0')
 				j++;
-			if (!(dest[k++] = ft_substr(s, i, (j - i))))
+			if (!(dest[k++] = ft_substr((char *)s, i, (j - i))))
 				return (free_tab(dest, i));
 			i = j;
 		}
