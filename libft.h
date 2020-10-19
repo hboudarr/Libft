@@ -18,6 +18,8 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# define BUFFER_SIZE 7
+
 void	ft_bzero(void *s, int n);
 int		ft_atoi(const char *nptr);
 int		ft_isalnum(int c);
