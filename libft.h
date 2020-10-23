@@ -58,7 +58,7 @@ void	ft_putstr_fd(char *s, int fd);
 // GNL
 char	*ft_get_line(char *left, char **line, int ret);
 int		ft_free(char *left);
-int		get_next_line(int fd, char **line);
+int		get_next_line(int fd, char **line, int flag);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen2(char *str);
